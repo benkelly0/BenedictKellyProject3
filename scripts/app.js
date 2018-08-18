@@ -7,7 +7,7 @@ dead.score = {
 };
 
 dead.result = {
-        level0: `Congratulations! You are 0% dead inside!`,
+        level0: `Congratulations! You are 0% dead inside!... or you're lying. (You're probably lying)`,
         level1: `Ah, you're only 20% dead inside. That's okay!`,
         level2: `You are 40% dead inside. This may be a problem...`,
         level3: `Woah! You're 60% dead inside. Eh... this is awkward.`,
@@ -25,7 +25,6 @@ dead.next = ()=>{
         dead.score[total]++;
         $(this).parent().parent().addClass('hide');
         $('.directions').removeClass('hide');
-        console.log(dead.score);
     });
     dead.finalQuestion();
 };
@@ -34,8 +33,8 @@ dead.finalQuestion = ()=>{
     $('.final-question').on('submit', function (e) {
         e.preventDefault();
         $('.directions').addClass('hide');
+        dead.results();
     });
-    dead.results();
 };
 
 dead.results = ()=>{
@@ -47,15 +46,15 @@ dead.results = ()=>{
     const level5 = $('<h2>').text(dead.result.level5);
     if (dead.score.care === 5){
         $('.final-result').append(level0);
-    }else if(dead.score.care === 4){
+    } else if (dead.score.care === 4){
         $('.final-result').append(level1);
-    }else if(dead.score.care === 3){
+    } else if (dead.score.care === 3){
         $('.final-result').append(level2);
-    }else if(dead.score.care === 2){
+    } else if (dead.score.care === 2){
         $('.final-result').append(level3);
-    }else if(dead.score.care === 1){
+    } else if (dead.score.care === 1){
         $('.final-result').append(level4);
-    }else{
+    } else {
         $('.final-result').append(level5);
     };
     dead.playAgain();
@@ -65,6 +64,7 @@ dead.playAgain = ()=>{
     $('.play-again').on('click', function(){
         $('.question').removeClass('hide');
         $('.directions').removeClass('hide');
+        $('.final-result').empty();
         dead.score.care = 0;
         dead.score.dontCare = 0;
         dead.score.total = 0;
