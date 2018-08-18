@@ -1,0 +1,38 @@
+.result{
+    position: relative;
+    height: 80vh;
+}
+
+section{
+    background: red;
+    min-height: 80vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.intro{
+    z-index: 10;
+}
+
+.question-1{
+    z-index: 9;
+}
+
+.question-2{
+    z-index: 8;
+}
+
+.question-3{
+    z-index: 7;
+}
+
+.question-4{
+    z-index: 6;
+}
+
+.question-5{
+    z-index: 5;
+}

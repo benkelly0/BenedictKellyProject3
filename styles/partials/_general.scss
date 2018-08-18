@@ -12,3 +12,14 @@
 body{
     min-height: 100vh;
 }
+
+.header,
+.footer{
+    min-height: 10vh;
+    background: black;
+    color: white;
+}
+
+.hide{
+    display: none;
+}

@@ -11,126 +11,127 @@
 <body>
 <!-- ---------- HEADER ---------- -->
     <header id="header" class="header">
-        <section class="wrapper">
+        <div class="wrapper">
             <h1>dead or alive</h1>
-            <h2>answer the questions below to figure out how dead you are inside</h2>
-            <button class="start-button">Start Quiz</button>
-        </section>
+        </div>
     </header>
 <!-- ---------- MAIN ---------- -->
     <main id="main" class="main">
-        <section id="question-1" class="question-1 question">
-            <div class="wrapper">
-                <h3>Question 1</h3>
-                <p>question</p>
-                <form action="">
-                    <div class="answer">
-                        <label class="care" for="care">Care</label>
-                        <input class="care" type="radio" name="question-1" id="care" data-answer="care" required="required">
-                    </div>
-                    <div class="answer">
-                        <label class="dontCare" for="dontCare">Don't Care</label>
-                        <input class="care" type="radio" name="question-1" id="dontCare" data-answer="dontCare" required="required">
-                    </div>
-                    <button class="question-button">Next Question</button>
-                </form>
-                <figure>
-                    
-                </figure>
-            </div>
-        </section>
-        <!-- <section id="question-2" class="question-2 question">
-            <div class="wrapper">
-                <h3>Question 2</h3>
-                <p>question</p>
-                <form action="">
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-2" id="">
-                    </div>
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-2" id="">
-                    </div>
-                    <button class="question-button">Next Question</button>
-                </form>
-                <figure>
-                    <img src="#" alt="">
-                </figure>
-            </div>
-        </section>
-        <section id="question-3" class="question-3 question">
-            <div class="wrapper">
-                <h3>Question 3</h3>
-                <p>question</p>
-                <form action="">
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-3" id="">
-                    </div>
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-3" id="">
-                    </div>
-                    <button class="question-button">Next Question</button>
-                </form>
-                <figure>
-                    <img src="#" alt="">
-                </figure>
-            </div>
-        </section>
-        <section id="question-4" class="question-4 question">
-            <div class="wrapper">
-                <h3>Question 4</h3>
-                <p>question</p>
-                <form action="">
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-4" id="">
-                    </div>
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-4" id="">
-                    </div>
-                    <button class="question-button">Next Question</button>
-                </form>
-                <figure>
-                    <img src="#" alt="">
-                </figure>
-            </div>
-        </section>
-        <section id="question-5" class="question-5 question">
-            <div class="wrapper">
-                <h3>Question 5</h3>
-                <p>question</p>
-                <form action="">
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-5" id="">
-                    </div>
-                    <div class="answer">
-                        <label for=""></label>
-                        <input type="radio" name="question-5" id="">
-                    </div>
-                    <button class="question-button">Next Question</button>
-                </form>
-                <figure>
-                    <img src="#" alt="">
-                </figure>
-            </div>
-        </section>
-        <section id="see-result" class="see-result">
-            <div class="wrapper">
-                <h3>Click here to see results</h3>
-                <button class="result-button">Results</button>
-            </div>
-        </section> -->
+        <div id="result" class="result">
+            <section id="intro" class="intro">
+                <div class="wrapper">
+                    <form action="">
+                        <button class="start-button">Start Quiz</button>
+                    </form>
+                </div>
+            </section>
+            <section id="question-1" class="question-1 question">
+                <div class="wrapper">
+                    <h3>Question 1</h3>
+                    <p>question</p>
+                    <form action="">
+                        <div class="answer">
+                            <label class="care" for="care">Care</label>
+                            <input class="care" type="radio" name="question-1" id="care" data-answer="care" data-count="total" required="required">
+                        </div>
+                        <div class="answer">
+                            <label class="dontCare" for="dontCare">Don't Care</label>
+                            <input class="care" type="radio" name="question-1" id="dontCare" data-answer="dontCare" data-count="total" required="required">
+                        </div>
+                        <button class="question-button">Next Question</button>
+                    </form>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section id="question-2" class="question-2 question">
+                <div class="wrapper">
+                    <h3>Question 2</h3>
+                    <p>question</p>
+                    <form action="">
+                        <div class="answer">
+                            <label class="care" for="care">Care</label>
+                            <input class="care" type="radio" name="question-2" id="care" data-answer="care" data-count="total" required="required">
+                        </div>
+                        <div class="answer">
+                            <label class="dontCare" for="dontCare">Don't Care</label>
+                            <input class="care" type="radio" name="question-2" id="dontCare" data-answer="dontCare" data-count="total" required="required">
+                        </div>
+                        <button class="question-button">Next Question</button>
+                    </form>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section id="question-3" class="question-3 question">
+                <div class="wrapper">
+                    <h3>Question 3</h3>
+                    <p>question</p>
+                    <form action="">
+                        <div class="answer">
+                            <label class="care" for="care">Care</label>
+                            <input class="care" type="radio" name="question-3" id="care" data-answer="care" data-count="total" required="required">
+                        </div>
+                        <div class="answer">
+                            <label class="dontCare" for="dontCare">Don't Care</label>
+                            <input class="care" type="radio" name="question-3" id="dontCare" data-answer="dontCare" data-count="total" required="required">
+                        </div>
+                        <button class="question-button">Next Question</button>
+                    </form>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section id="question-4" class="question-4 question">
+                <div class="wrapper">
+                    <h3>Question 4</h3>
+                    <p>question</p>
+                    <form action="">
+                        <div class="answer">
+                            <label class="care" for="care">Care</label>
+                            <input class="care" type="radio" name="question-4" id="care" data-answer="care" data-count="total" required="required">
+                        </div>
+                        <div class="answer">
+                            <label class="dontCare" for="dontCare">Don't Care</label>
+                            <input class="care" type="radio" name="question-4" id="dontCare" data-answer="dontCare" data-count="total" required="required">
+                        </div>
+                        <button class="question-button">Next Question</button>
+                    </form>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+            </section>
+            <section id="question-5" class="question-5 question">
+                <div class="wrapper">
+                    <h3>Question 5</h3>
+                    <p>question</p>
+                    <form action="">
+                        <div class="answer">
+                            <label class="care" for="care">Care</label>
+                            <input class="care" type="radio" name="question-5" id="care" data-answer="care" data-count="total" required="required">
+                        </div>
+                        <div class="answer">
+                            <label class="dontCare" for="dontCare">Don't Care</label>
+                            <input class="care" type="radio" name="question-5" id="dontCare" data-answer="dontCare" data-count="total" required="required">
+                        </div>
+                        <button class="result-button">See Results!</button>
+                    </form>
+                    <figure>
+                        <img src="" alt="">
+                    </figure>
+                </div>
+            </section>
+        </div>
     </main>
 <!-- ---------- FOOTER ---------- -->
     <footer id="footer" class="footer">
-        <section id="result" class="result wrapper">
-
-        </section>
+        <div class="wrapper">
+            <h2>answer the questions above to figure out how dead you are inside</h2>
+        </div>
     </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
         crossorigin="anonymous"></script>
