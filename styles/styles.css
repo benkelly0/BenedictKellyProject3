@@ -157,18 +157,19 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
 body {
   min-height: 100vh; }
 
+.hide {
+  display: none; }
+
 .header,
 .footer {
   min-height: 10vh;
   background: black;
   color: white; }
 
-.hide {
-  display: none; }
-
 .result {
   position: relative;
-  height: 80vh; }
+  height: 80vh;
+  background: red; }
 
 section {
   background: red;

@@ -21,7 +21,7 @@
             <section id="intro" class="intro">
                 <div class="wrapper">
                     <form action="">
-                        <button class="start-button">Start Quiz</button>
+                        <button class="start-button" data-timesPlayed="timesPlayed">Start Quiz</button>
                     </form>
                 </div>
             </section>
@@ -109,7 +109,7 @@
                 <div class="wrapper">
                     <h3>Question 5</h3>
                     <p>question</p>
-                    <form action="">
+                    <form class="final-question" action="">
                         <div class="answer">
                             <label class="care" for="care">Care</label>
                             <input class="care" type="radio" name="question-5" id="care" data-answer="care" data-count="total" required="required">
@@ -125,18 +125,21 @@
                     </figure>
                 </div>
             </section>
+            <div class="wrapper">
+                <div class="final-result"></div>
+                <button class="play-again">Play Again!</button>
+            </div>
         </div>
     </main>
 <!-- ---------- FOOTER ---------- -->
     <footer id="footer" class="footer">
         <div class="wrapper">
-            <h2>answer the questions above to figure out how dead you are inside</h2>
+            <h2 class="hide directions">answer the questions above to figure out how dead you are inside</h2>
         </div>
     </footer>
     <script defer src="https://use.fontawesome.com/releases/v5.2.0/js/all.js" integrity="sha384-4oV5EgaV02iISL2ban6c/RmotsABqE4yZxZLcYMAdG7FAPsyHYAPpywE9PJo+Khy"
         crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script src="scripts/smooth-scroll.js"></script>
     <script src="scripts/app.js"></script>
 </body>
 </html>
