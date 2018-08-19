@@ -3,6 +3,15 @@
     padding: 0;
 }
 
+img{
+    max-width: 100%;
+}
+
+html{
+	font-size: 62.5%;
+	font-family: 'Open Sans', sans-serif;
+}
+
 .wrapper{
     max-width: 1080px;
     width: 95%;
@@ -10,7 +19,12 @@
 }
 
 body{
+    font-size: 1.6rem;
     min-height: 100vh;
+}
+
+.flex{
+    display: flex;
 }
 
 .hide{
@@ -20,6 +34,23 @@ body{
 .header,
 .footer{
     min-height: 10vh;
-    background: black;
-    color: white;
+    background: #353535;
+    color: #C1C1C1;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Eater', cursive;
+}
+.button{
+    border: none;
+    background: #353535;
+    color: #C1C1C1;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-family: 'Eater', cursive;
+    transition: .3s;
+}
+
+.button:hover{
+    color: #8B0000;
 }

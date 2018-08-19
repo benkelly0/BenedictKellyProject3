@@ -1,11 +1,12 @@
 .result{
     position: relative;
     height: 80vh;
-    background: red;
+    background: #8B0000;
+    color: #C1C1C1;
 }
 
 section{
-    background: red;
+    background: #F5F5F5;
     min-height: 80vh;
     position: absolute;
     top: 0;
@@ -16,24 +17,43 @@ section{
 
 .intro{
     z-index: 10;
+    background: #8B0000;
+    color: #C1C1C1;
+    text-align: center;
+    h2{
+        font-weight: 400;
+        span{
+            font-size: 1rem;
+        }
+    }
 }
 
 .question-1{
     z-index: 9;
+    background: #C1C1C1;
+    color: #353535;
 }
 
 .question-2{
     z-index: 8;
+    background: #8B0000;
+    color: #C1C1C1;
 }
 
 .question-3{
     z-index: 7;
+    background: #C1C1C1;
+    color: #353535;
 }
 
 .question-4{
     z-index: 6;
+    background: #8B0000;
+    color: #C1C1C1;
 }
 
 .question-5{
     z-index: 5;
+    background: #C1C1C1;
+    color: #353535;
 }
