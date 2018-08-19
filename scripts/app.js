@@ -23,7 +23,7 @@ dead.next = ()=>{
         $('form').trigger('reset');
         dead.score[answer]++;
         dead.score[total]++;
-        $(this).parent().parent().addClass('hide');
+        $(this).parent().parent().removeClass('animate-show').addClass('animate-hide');
         $('.directions').removeClass('hide');
     });
     dead.finalQuestion();
@@ -62,7 +62,7 @@ dead.results = ()=>{
 
 dead.playAgain = ()=>{
     $('.play-again').on('click', function(){
-        $('.question').removeClass('hide');
+        $('.question').removeClass('animate-hide').addClass('animate-show');
         $('.directions').removeClass('hide');
         $('.final-result').empty();
         dead.score.care = 0;

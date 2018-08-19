@@ -5,6 +5,7 @@
 
 img{
     max-width: 100%;
+    border-radius: 10px;
 }
 
 html{
@@ -23,10 +24,6 @@ body{
     min-height: 100vh;
 }
 
-.flex{
-    display: flex;
-}
-
 .hide{
     display: none;
 }
@@ -40,6 +37,7 @@ body{
     text-transform: uppercase;
     font-family: 'Eater', cursive;
 }
+
 .button{
     border: none;
     background: #353535;
@@ -49,6 +47,7 @@ body{
     text-transform: uppercase;
     font-family: 'Eater', cursive;
     transition: .3s;
+    margin-top: 1%;
 }
 
 .button:hover{
