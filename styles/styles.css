@@ -451,7 +451,9 @@ h3 {
 @media (max-width: 800px) {
   .result,
   section {
-    min-height: 90vh; }
+    height: 90vh; }
+  body {
+    height: 100vh; }
   .flex {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -462,6 +464,12 @@ h3 {
       .flex figure figcaption {
         padding: 10px 0; } }
 
+@media (max-width: 700px) {
+  .result,
+  section,
+  body {
+    height: 170vh; } }
+
 @media (max-width: 570px) {
   .skull {
     font-size: 10rem; }
@@ -470,7 +478,7 @@ h3 {
   .result,
   section,
   body {
-    height: 300%; }
+    height: 200vh; }
   .answer label {
     font-size: 1.5rem; }
   .final-page img {
@@ -480,7 +488,7 @@ h3 {
   .result,
   section,
   body {
-    height: 130%; } }
+    height: 100vh; } }
 
 @media (max-width: 1030px) {
   .footer-text {

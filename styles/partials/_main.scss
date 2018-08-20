@@ -195,7 +195,10 @@ h3{
 @media(max-width: 800px){
     .result,
     section{
-        min-height: 90vh;
+        height: 90vh;
+    }
+    body{
+        height: 100vh;
     }
 
     .flex{
@@ -206,6 +209,14 @@ h3{
                 padding: 10px 0;
             }
         }
+    }
+}
+
+@media(max-width: 700px){
+    .result,
+    section,
+    body{
+        height: 170vh;
     }
 }
 
@@ -221,7 +232,7 @@ h3{
     .result,
     section,
     body{
-        height: 300%;
+        height: 200vh;
     }
 
     .answer label{
@@ -237,6 +248,6 @@ h3{
     .result,
     section,
     body{
-        height: 130%;
+        height: 100vh;
     }
 }
